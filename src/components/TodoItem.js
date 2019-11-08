@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {observer} from 'mobx-react';
+import todoStore from '../stores/TodoStore';
 
 @observer
 class TodoItem extends Component {
@@ -8,6 +9,7 @@ class TodoItem extends Component {
     }
     remove = () =>{
         this.props.todo.remove();
+        todoStore.getlengthActiveItem();
     }
     render(){
         const {todo} = this.props;
