@@ -385,6 +385,15 @@ button{
 }
 button:hover{
     color:red;
+}
 
-
+@media (max-width: 768px){
+    .todoapp {
+        top: 20vh;
+        left: 0;
+        right: 0 ;
+        width: auto;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+        margin: 0px 30px;
+        }
 }
